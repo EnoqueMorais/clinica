@@ -48,33 +48,24 @@
         <div class="row">
             <div class="col-12">
                 <table class="table">
-                    <h1>Listagem de clientes</h1>
+                    <h1>Detalhe de cliente</h1>
                     <thead class="thead-dark">
                         <tr>
-                            <th>NOME</th>
-                            <th>DATA NASCIMENTO</th>
+                            <th>Nome</th>
+                            <th>Dt Nasc</th>
                             <th>CPF</th>
-                            <th>SEXO</th>
-                            <th>DETALHE</th>
+                            <th>Sexo</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for cliente in clientes %}
                             <tr>
                                 <td>{{cliente.nome}}</td>
                                 <td>{{cliente.dt_nasc}}</td>
                                 <td>{{cliente.cpf}}</td>
                                 <td>{{cliente.sexo}}</td>
-                                <td><a href="/atendimento/cliente/{{cliente.id}}"/> Ver </td>
-                            </tr>    
-                        {% endfor%}    
+                            </tr>      
                     </tbody>
                     <tfoot>
-                        <tr>
-                            <td id="rodape">
-                                <p>Foram encontrados {{clientes | length}} Cadastrado!!</p>
-                            </td>
-                        </tr>
                     </tfoot>
                 </table>
             </div>    
