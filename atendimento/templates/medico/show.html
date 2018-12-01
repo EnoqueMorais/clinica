@@ -1,0 +1,22 @@
+{% extends "base.html" %}  
+{% block content %}
+<div>
+        <h1>Detalhe de Medico</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>NOME</th>
+                <th>CRM</th>
+                <th>ESPECIALIDADE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{medico.nome}}</td>
+                <td>{{medico.crm}}</td>
+                <td>{{medico.especalidade}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{%endblock%}

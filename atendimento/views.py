@@ -18,3 +18,7 @@ def medico_list(request):
     medicos = Medico.objects.all()
     return render(request, 'medico/list.html',{'medicos':medicos})  
 
+def medico_show(request, medico_id):
+    medico = Medico.objects.get(pk=medico_id)
+    return render(request, 'medico/show.html',{'medico':medico})  
+
