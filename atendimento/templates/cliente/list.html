@@ -17,7 +17,7 @@
                 {% for cliente in clientes %}
                 <tr>
                     <td>{{cliente.nome}}</td>
-                    <td>{{cliente.dt_nasc}}</td>
+                    <td>{{cliente.dt_nasc | date:"d/m/Y"}}</td>
                     <td>{{cliente.cpf}}</td>
                     <td>{{cliente.sexo}}</td>
                     <td><a href="/atendimento/cliente/{{cliente.id}}" /> Ver </td>
